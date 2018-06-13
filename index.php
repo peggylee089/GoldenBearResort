@@ -158,63 +158,103 @@ echo "<script>alert('Test Success.')</script>";
 </div>   
 -->
 
-        This form is processed by a simple PHP script that shows the name/value pairs on the page and also sends the form data to the specified email address. 
-        <br><br>
-        It only works with single values for each name attribute.
-        <br><br>
-        <hr>
-        <br><br>
+        <form name="contactform" method="post" action="email.php">
 
-        <form action="email.php" method="post">
-            <br>
+<table width="450px">
 
+<tr>
 
-            First Name: <input type="text" name="first_name"><br>
-            Last Name: <input type="text" name="last_name"><br>
+<td valign="top">
 
-            <br><br>
+ <label for="first_name">First Name *</label>
 
-            What type of animals do you like? <br>
-            Dog <input type="checkbox" name="dog" value="yes"><br>
-            Cat <input type="checkbox" name="cat" value="yes"><br>
-            Bird <input type="checkbox" name="bird" value="yes"><br>
-            Rabbit <input type="checkbox" name="rabbit" value="yes"><br>
-            Horse <input type="checkbox" name="horse" value="yes"><br>
+</td>
 
-            <br><br>
+<td valign="top">
 
-            What is your favorite color? <br>
-            Green <input type="radio" name="color" value="green"><br>
-            Red <input type="radio" name="color" value="red"><br>
-            Blue <input type="radio" name="color" value="blue"><br>
+ <input  type="text" name="first_name" maxlength="50" size="30">
 
-            <br><br>
+</td>
 
-            What is you favorite car model?<br>
-            <select name="cars">
-                <option value="choose one">Please select one</option>
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option>
-            </select>
+</tr>
 
-            <br><br>
+<tr>
 
-            Please enter your comments:<br>
-            <textarea rows="5"  cols="50" name="comments"></textarea>
+<td valign="top"">
 
+ <label for="last_name">Last Name *</label>
 
-            <br><br><br><br>
+</td>
 
-            <input type="submit" value="Submit the Form">
-            &nbsp; &nbsp; &nbsp; &nbsp;
+<td valign="top">
 
+ <input  type="text" name="last_name" maxlength="50" size="30">
 
-            <input type="reset" value="Clear the Form">
+</td>
 
+</tr>
 
-        </form>
+<tr>
+
+<td valign="top">
+
+ <label for="email">Email Address *</label>
+
+</td>
+
+<td valign="top">
+
+ <input  type="text" name="email" maxlength="80" size="30">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+ <label for="telephone">Telephone Number</label>
+
+</td>
+
+<td valign="top">
+
+ <input  type="text" name="telephone" maxlength="30" size="30">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top">
+
+ <label for="comments">Comments *</label>
+
+</td>
+
+<td valign="top">
+
+ <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td colspan="2" style="text-align:center">
+
+ <input type="submit" value="Submit">  </a>
+
+</td>
+
+</tr>
+
+</table>
+
+</form>
     </body>
 
     <footer>
