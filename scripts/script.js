@@ -1,8 +1,9 @@
 $(document).ready(function() {
     // Navigation bar movement
     $('.myMenu ul li').hover(function() {
-	   $(this).children('ul').stop(true, false, true).slideToggle(300);
+        $(this).children('ul').stop(true, false, true).slideToggle(300);
     });
+
 });
 
 function calculate(){
@@ -17,16 +18,16 @@ function calculate(){
         var strUser = e.options[e.selectedIndex].text;
         var pricePerRoom = 0;
         if (strUser === "Classical suite for single" ||strUser === "Chalet for single"){
-             pricePerRoom = 1000;
+            pricePerRoom = 1000;
         }
         else if (strUser === "Classical suite for double"||strUser === "Chalet for double"){
-             pricePerRoom = 2000;
+            pricePerRoom = 2000;
         }
         else if (strUser === "Classical suite for quad"||strUser === "Chalet for quad"){
-             pricePerRoom = 4000;
+            pricePerRoom = 4000;
         }
         else if (strUser === "Presidential suite"){
-             pricePerRoom = 5000;
+            pricePerRoom = 5000;
         }
         return pricePerRoom;
     }
@@ -35,13 +36,13 @@ function calculate(){
         var strUser = e.options[e.selectedIndex].text;
         var numOfRooms = 0;
         if (strUser === "1"){
-             numOfRooms = 1;
+            numOfRooms = 1;
         }
         else if (strUser === "2"){
-             numOfRooms = 2;
+            numOfRooms = 2;
         }
         else if (strUser === "3"){
-             numOfRooms = 3;
+            numOfRooms = 3;
         }
         return numOfRooms;
     }
